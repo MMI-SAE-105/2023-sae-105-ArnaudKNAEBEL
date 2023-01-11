@@ -1,15 +1,52 @@
-<html lang="en">
+<html lang="en" x-data="{MenuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realistic mouv'</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="src/css/style.css">
      
 </head>
 <body>
+
+    <header class="Header">
+
+        <a href="./index.html">
+            <h2 style="padding-left: 20px; color:white">Realistic Mouv'</h2>
+        </a>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="../public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <a href="./index.html">
+                    <h2 class="TexteCentre"  style="color: white">Accueil</h2>
+                </a>
+                <a href="./">
+                    <h2  class="TexteCentre"  style="color: white">Artiste</h2>
+                </a>
+                <a href="./formulaire.html">
+                    <h2  class="TexteCentre"  style="color: white">Formulaire</h2>
+                </a>
+                <a href="./index.html">
+                    <h2  class="TexteCentre"  style="color: white">tarif </h2>
+                </a>
+
+                </a>
+                <a href="./APropos.html">
+                    <h2 class="TexteCentre" style="color: white">A propos</h2>
+                </a>
+            </ul>
+
+        </nav>
+    </header>
+
     <h1>
-        <img src="./public/img/image1KleinOeuvreP.jpg" alt="Oeuvre de Yves 
+        <img src="./public/img/image1KleinOeuvreP.jpg" class="ImageCentre" style="margin-top: 80px;" alt="Oeuvre de Yves 
         Klein">
     </h1>
 
@@ -18,7 +55,7 @@
     </h2>
 
     <h3>
-        <img src="./public/img/image2Lion.jpg" alt="">
+        <img src="./public/img/image2Lion.jpg" class="ImageCentre" alt="">
     </h3>
 
     <h4>Le groupe des Nouveaux Réalistes est fondé en 1960 par le peintre Yves Klein et le critique d'art Pierre Restany à l'occasion de la première exposition collective d'un groupe d'artistes français et suisses à la galerie Apollinaire de Milan. Contemporain du Pop Art américain, dont il est souvent présenté comme la version française, le Nouveau Réalisme incarne, avec Fluxus, l'une des nombreuses tendances de l'avant-garde dans les années 1960. Il est dissous en 1966.
@@ -50,7 +87,7 @@
     
     <h2>Tarifs Exposition</h2>
 
-    <h2><img src="./public/img/image15Parisparcexpo.jpg" alt=""></h2>
+    <h2><img src="./public/img/image15Parisparcexpo.jpg" class="ImageCentre" alt=""></h2>
     <h4>Dates de l’exposition : du 13 avril au 23 juin 2021
         Lieu de l’exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris
         Horaires d’ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).
@@ -60,17 +97,22 @@
         Réduction 13 - 25 ans ⇒ 5€
         Fondation Cartier Pass ⇒ 18€ - 50€
         Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants ⇒ Gratuit</h4>
+<footer>
+    <h3  class="TexteCentre">Mentions légales</h3>
+    <p class="TexteCentre">Ce projet a été réalisé dans le cadre d’une situation profesionnelle du département MMI Monbéliart.</p>
+    <h3 class="TexteCentre">Nous Contacter</h3>
+    <p class="TexteCentre">Formulaire d’inscription</p>
+    <a href="mailto:arnaud.knaebel87@gmail.com" class="TexteCentre" style="color:white ;">arnaud.knaebel87@gmail.com</a>
 
-    <h3>Mentions légales</h3>
-    <p>Ce projet a été réalisé dans le cadre d’une situation profesionnelle du département MMI Monbéliart.</p>
-    <h3>Nous Contacter</h3>
-    <p>Formulaire d’inscription</p>
-    <a href="mailto:arnaud.knaebel87@gmail.com">arnaud.knaebel87@gmail.com</a>
+    <h2 class="TexteCentre">Réseaux Sociaux</h2>
 
-    <h2>Réseaux Sociaux</h2>
+    <div class="Gallery">
     <p><img src="./public/img/LogoInsta.svg" alt=""></p>
     <p><img src="./public/img/LogoTwitter.svg" alt=""></p>
     <p><img src="./public/img/LogoFacebook.svg" alt=""></p>
+</div>
+
+    <footer></footer>
 
 
 

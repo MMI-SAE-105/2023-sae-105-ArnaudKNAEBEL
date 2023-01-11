@@ -9,3 +9,54 @@ height:307px
     display: flex;
     
 }
+
+.TexteCentre{
+    text-align: center;
+} 
+
+footer {
+background-color: #002FA7;
+color: white;
+}
+
+.Gallery {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #002FA7;
+    top: 0;
+    height: 70pX;
+    position: fixed;
+    width: 100%;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button {
+    position: relative;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+nav {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #002FA7;
+    z-index: 1;
+
+}
