@@ -1,0 +1,71 @@
+<html lang="en" x-data="{MenuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic mouv'</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+     
+</head>
+<body>
+
+    <header class="Header">
+
+        <a href="./index.html">
+            <h2 style="padding-left: 20px; color:white">Realistic Mouv'</h2>
+        </a>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="../public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <a href="./index.html">
+                    <h2 class="TexteCentre"  style="color: white">Accueil</h2>
+                </a>
+                <a href="./">
+                    <h2  class="TexteCentre"  style="color: white">Artiste</h2>
+                </a>
+                <a href="./formulaire.html">
+                    <h2  class="TexteCentre"  style="color: white">Formulaire</h2>
+                </a>
+                <a href="./index.html">
+                    <h2  class="TexteCentre"  style="color: white">Tarifs </h2>
+                </a>
+
+                </a>
+                <a href="./APropos.html">
+                    <h2 class="TexteCentre" style="color: white">A propos</h2>
+                </a>
+            </ul>
+
+        </nav>
+    </header>
+
+    <h1>Yves KLEIN</h1>
+    <img src="./public/img/image10YvesKlein.jpg" class="ImageCentre" alt="">
+    <h2>Son Histoire</h2>
+    <p>Yves Klein, né à Nice le 28 avril 1928, mort à Paris le 6 juin 1962, est un artiste français.<br>
+
+        Malgré une carrière artistique assez courte (1954-1962), il est considéré comme l'un des plus importants protagonistes de l'avant-garde picturale de l'après-guerre. Il est notamment connu pour son bleu (IKB pour International Klein Blue), qu'il a appliqué sur de nombreuses œuvres.<br>
+        
+        Il recherche toute sa vie un travail pictural d'ordre spirituel, ce qui l'amena à intervenir dans l'espace public. Selon lui la peinture est « comme la fenêtre d'une prison, où les lignes, les contours, les formes et la composition sont déterminés par les barreaux ». Ses tableaux monochromes l'ont libéré de ces contraintes.</p>
+        <h1>Martial RAYSSE</h1>
+        <img src="./public/img/image4MartialRAYSSE.jpg" class="ImageCentre" alt="">
+        <h2>Son Histoire</h2>
+        <p>Martial Raysse est un peintre, sculpteur et réalisateur français né le 12 février 1936 à Golfe-Juan (Alpes-Maritimes). En 2011, il détient le record de l'œuvre la plus chère vendue par un artiste français vivant<br>
+        Fils d'artisans céramistes de Vallauris, Martial Raysse commence à peindre et à écrire des poèmes dès 1948. Après ses études secondaires, il choisit d’étudier les lettres tout en pratiquant l'athlétisme à haut niveau, avant de se tourner vers la peinture en 1945. Il commence par réaliser des assemblages de détritus et d'objets divers présentés dans des boîtes de plexiglas. En 1958, il participe à une exposition de groupe, en présence de Jean Cocteau. En quelques années, il devient l'un des peintres abstraits les plus notables de la Côte d'Azur et ses œuvres atteignent une cote élevée alors qu'il remet sa carrière en question.</p>
+        <h1>Lourdes CASTRO</h1>
+    <img src="./public/img/image6LourdesCASTRO.jpg" class="ImageCentre" alt="">
+    <h2>Son Histoire</h2>
+    <p>Maria de Lourdes Bettencourt de Castro, dite Lourdes Castro, née le 9 décembre 1930 à Funchal et morte dans la même ville le 8 janvier 2022, est une peintre portugaise.<br>
+    Lourdes Castro réalise des peintures abstraites lyriques dans les années 1950, après quoi elle expérimente de nouveaux matériaux, et son travail évolue rapidement vers un mode plus conflictuel1. Au début des années 1960, elle travaille sur une série de constructions d'objets divers baignant dans une teinture argentée uniforme1. Sinistres, sérieuses et humoristiques, ces œuvres présentent des affinités avec celles de Niki de Saint Phalle de la même époque1. D'autres œuvres explorent la notion de présence et d'absence, soit en remplissant uniformément des silhouettes humaines projetées sur la toile, soit en déployant des silhouettes découpées et superposées dans des matériaux transparents</p>
+    <h1>Daniel SPOERRI</h1>
+    <img src="./public/img/image13DanielSPOERRI.jpg" class="ImageCentre" alt="">
+    <h2>Son Histoire</h2>
+    <p>Daniel Spoerri, pseudonyme de Daniel Isaak Feinstein, né le 27 mars 1930 à Galați (Roumanie), est un artiste plasticien suisse, d'origine roumaine.</p>
+    
+</body>
