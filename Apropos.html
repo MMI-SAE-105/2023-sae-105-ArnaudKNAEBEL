@@ -1,29 +1,68 @@
-<html lang="en">
+<html lang="en" x-data="{MenuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realistic mouv'</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="src/css/style.css">
      
 </head>
 <body>
-    <h1>A PROPOS</h1>
+    <header class="Header">
+
+        <a href="./index.html">
+            <h2 style="padding-left: 20px; color:white">Realistic Mouv'</h2>
+        </a>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="../public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <a href="./index.html">
+                    <h2 class="TexteCentre"  style="color: white">Accueil</h2>
+                </a>
+                <a href="./">
+                    <h2  class="TexteCentre"  style="color: white">Artiste</h2>
+                </a>
+                <a href="./formulaire.html">
+                    <h2  class="TexteCentre"  style="color: white">Formulaire</h2>
+                </a>
+                <a href="./index.html">
+                    <h2  class="TexteCentre"  style="color: white">Tarifs </h2>
+                </a>
+
+                </a>
+                <a href="./APropos.html">
+                    <h2 class="TexteCentre" style="color: white">A propos</h2>
+                </a>
+            </ul>
+
+        </nav>
+    </header>
+    <h1 class="TexteCentre"  style="color:#002FA7 ;">A PROPOS</h1>
     <h2>Les Informations</h2>
     <p>Le nouveau réalisme désigne plusieurs courants artistiques qui se sont opposés à la peinture abstraite, dans les années 1940, en décrivant la réalité sociale autour des peintres André Fougeron, Boris Taslitzky, Jean Milhau et Mireille Miailhe, puis dans les années 1960 le groupe des nouveaux réalistes est fondé par le peintre Yves Klein.</p>
 
-    <h3>Mentions légales</h3>
-    <p>Ce projet a été réalisé dans le cadre d’une situation profesionnelle du département MMI Monbéliart.</p>
-    <h3>Nous Contacter</h3>
-    <p>Formulaire d’inscription</p>
-    <a href="mailto:arnaud.knaebel87@gmail.com">arnaud.knaebel87@gmail.com</a>
-
-    <h2>Réseaux Sociaux</h2>
-    <p><img src="./public/img/LogoInsta.svg" alt=""></p>
-    <p><img src="./public/img/LogoTwitter.svg" alt=""></p>
-    <p><img src="./public/img/LogoFacebook.svg" alt=""></p>
-
+    <footer>
+        <h3  class="TexteCentre">Mentions légales</h3>
+        <p class="TexteCentre">Ce projet a été réalisé dans le cadre d’une situation profesionnelle du département MMI Monbéliart.</p>
+        <h3 class="TexteCentre">Nous Contacter</h3>
+        <p class="TexteCentre">Formulaire d’inscription</p>
+        <a href="mailto:arnaud.knaebel87@gmail.com" class="TexteCentre" style="color:white ;">arnaud.knaebel87@gmail.com</a>
     
+        <h2 class="TexteCentre">Réseaux Sociaux</h2>
+    
+        <div class="Gallery">
+        <p><img src="./public/img/LogoInsta.svg" alt=""></p>
+        <p><img src="./public/img/LogoTwitter.svg" alt=""></p>
+        <p><img src="./public/img/LogoFacebook.svg" alt=""></p>
+    </div>
+    
+        </footer>
     
 </body>
 </html>

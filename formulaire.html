@@ -1,39 +1,85 @@
-<html lang="en">
+<html lang="en"  x-data="{MenuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realistic mouv'</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="src/css/style.css">
      
 </head>
 <body>
-    <h1>FORMULAIRE D'INSCRIPTION</h1>
+    <header class="Header">
+
+        <a href="./index.html">
+            <h2 style="padding-left: 20px; color:white">Realistic Mouv'</h2>
+        </a>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="../public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <a href="./index.html">
+                    <h2 class="TexteCentre"  style="color: white">Accueil</h2>
+                </a>
+                <a href="./">
+                    <h2  class="TexteCentre"  style="color: white">Artiste</h2>
+                </a>
+                <a href="./formulaire.html">
+                    <h2  class="TexteCentre"  style="color: white">Formulaire</h2>
+                </a>
+                <a href="./index.html">
+                    <h2  class="TexteCentre"  style="color: white">Tarifs </h2>
+                </a>
+
+                </a>
+                <a href="./APropos.html">
+                    <h2 class="TexteCentre" style="color: white">A propos</h2>
+                </a>
+            </ul>
+
+        </nav>
+    </header>
+    <h1 class="TexteCentre"  style="color:#002FA7 ;margin-top: 90px;">FORMULAIRE D'INSCRIPTION</h1>
+
+    <div style="background-color: grey;width: 180px;">
     <h2>Vos Informations</h2>
-    <label for="prénom">Quel est votre prénom ?</label>
-<input type="text" id="prénom">
-<label>Quel est votre nom ?
+</div>
+
+<form></form>
+    <label for="prénom">prénom </label>
+<input type="text" id="prénom"> <br>
+<label>nom 
     <input type="text">
-    </label>
-    <label for="e-mail">Quel est votre adresse e-mail ?</label>
-    <input type="text" id="e-mail">
-    <label for="tel">Quel est votre numéro de téléphone ?</label>
-    <input type="text" id="tel">
-    <label for="message">Quel est votre message ?</label>
-    <input type="text" id="message">
-    <button type="submit" >Envoyer</button>
+    </label> <br>
+    <label for="e-mail">e-mail </label>
+    <input type="text" id="e-mail"><br>
+    <label for="tel">numéro de téléphone</label>
+    <input type="text" id="tel"> <br>
+    <label for="message">message</label>
+    <input type="text" id="message"><br>
+    <button type="submit" class="BtnEnvoyer" >Envoyer</button>
+</form>
 
-    <h3>Mentions légales</h3>
-    <p>Ce projet a été réalisé dans le cadre d’une situation profesionnelle du département MMI Monbéliart.</p>
-    <h3>Nous Contacter</h3>
-    <p>Formulaire d’inscription</p>
-    <a href="mailto:arnaud.knaebel87@gmail.com">arnaud.knaebel87@gmail.com</a>
+<footer>
+    <h3  class="TexteCentre">Mentions légales</h3>
+    <p class="TexteCentre">Ce projet a été réalisé dans le cadre d’une situation profesionnelle du département MMI Monbéliart.</p>
+    <h3 class="TexteCentre">Nous Contacter</h3>
+    <p class="TexteCentre">Formulaire d’inscription</p>
+    <a href="mailto:arnaud.knaebel87@gmail.com" class="TexteCentre" style="color:white ;">arnaud.knaebel87@gmail.com</a>
 
-    <h2>Réseaux Sociaux</h2>
+    <h2 class="TexteCentre">Réseaux Sociaux</h2>
+
+    <div class="Gallery">
     <p><img src="./public/img/LogoInsta.svg" alt=""></p>
     <p><img src="./public/img/LogoTwitter.svg" alt=""></p>
     <p><img src="./public/img/LogoFacebook.svg" alt=""></p>
+</div>
 
+    </footer>
     
     
 </body>
